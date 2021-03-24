@@ -11,7 +11,8 @@ class Triangle
   
   def kind
     if ( a + b ) < c || 
-      raise TriangleError
+      begin
+        raise TriangleError
       rescue TriangleError => error
         error.message
       end
