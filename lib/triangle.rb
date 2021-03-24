@@ -9,6 +9,10 @@ class Triangle
     self.class.all << self
   end
   
+  def self.all
+    @@all
+  end
+
   def kind
     if ( a + b ) < c 
       begin
