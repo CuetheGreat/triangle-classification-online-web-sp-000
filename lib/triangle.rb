@@ -10,13 +10,18 @@ class Triangle
   end
   
   def kind
-    if ( a + b ) < c || 
+    if ( a + b ) < c 
       begin
         raise TriangleError
       rescue TriangleError => error
-        error.message
+          puts error.message
       end
-    end
+    elsif a == b && b == c
+      :equalateral
+    elsif (a == b && a != c) || (b == c && c != a) || (c == a && a != b)
+      :isosceles
+    elsif
+      
   end  
   
   
