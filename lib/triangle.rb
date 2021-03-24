@@ -1,6 +1,6 @@
 class Triangle
   
-  @@@all =[]
+  @@all =[]
   
   def initialize(a,b,c)
     @a = a
