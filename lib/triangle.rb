@@ -21,7 +21,7 @@ class Triangle
           puts error.message
       end
     elsif @a == @b && @b == @c
-      :equalateral
+      :equilateral
     elsif (@a == @b && @a != @c) || (@b == @c && @c != @a) || (@c == @a && @a != @b)
       :isosceles
     else
