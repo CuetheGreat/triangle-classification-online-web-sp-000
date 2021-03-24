@@ -6,6 +6,7 @@ class Triangle
     @a = a
     @b = b
     @c = c 
+    @size = [@a,@b,@c].sort
     self.class.all << self
   end
   
@@ -15,7 +16,7 @@ class Triangle
 
   def kind
     
-    if (@a <= 0  || @b <= 0 || @c <= 0) || ((@a + @b) <= @c)
+    if (@a <= 0  || @b <= 0 || @c <= 0) || 
       raise TriangleError
     end
     
