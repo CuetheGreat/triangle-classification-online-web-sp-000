@@ -14,6 +14,14 @@ class Triangle
   end
 
   def kind
+    
+    if (@a == 0  || @b == 0 @c == 0)
+      raise TriangleError
+    
+    
+    
+    
+    
     if @a == @b && @b == @c
       :equilateral
     elsif (@a == @b && @a != @c) || (@b == @c && @c != @a) || (@c == @a && @a != @b)
@@ -21,6 +29,8 @@ class Triangle
     elsif (@a != @b && @b != @c && @c != @a)
       :scalene
     end
+    
+    
   end
   
   
