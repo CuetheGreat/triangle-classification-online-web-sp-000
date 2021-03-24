@@ -20,9 +20,10 @@ class Triangle
       :equalateral
     elsif (a == b && a != c) || (b == c && c != a) || (c == a && a != b)
       :isosceles
-    elsif
-      
-  end  
+    else
+      :scalene
+    end
+  end
   
   
   class TriangleError < StandardError
