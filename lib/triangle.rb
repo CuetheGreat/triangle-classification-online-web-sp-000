@@ -10,7 +10,7 @@ class Triangle
   end
   
   def kind
-    if( a + b ) < c
+    if ( a + b ) < c || 
       raise TriangleError
       rescue TriangleError => 
         message "sides do not match"
