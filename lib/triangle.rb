@@ -16,7 +16,7 @@ class Triangle
 
   def kind
     
-    if (@a <= 0  || @b <= 0 || @c <= 0) || 
+    if (@a <= 0  || @b <= 0 || @c <= 0) || (@size[0] + @size[1] <= @size[2]) 
       raise TriangleError
     end
     
