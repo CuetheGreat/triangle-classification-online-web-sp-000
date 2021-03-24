@@ -14,15 +14,15 @@ class Triangle
   end
 
   def kind
-    if ( a + b ) < c 
+    if ( @a + @b ) < @c 
       begin
         raise TriangleError
       rescue TriangleError => error
           puts error.message
       end
-    elsif a == b && b == c
+    elsif @a == @b && @b == @c
       :equalateral
-    elsif (a == b && a != c) || (b == c && c != a) || (c == a && a != b)
+    elsif (@a == @b && @a != @c) || (@b == @c && @c != @a) || (@c == @a && @a != @b)
       :isosceles
     else
       :scalene
