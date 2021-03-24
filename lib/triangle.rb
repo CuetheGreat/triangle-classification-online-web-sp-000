@@ -14,7 +14,7 @@ class Triangle
   end
 
   def kind
-    if ( @a + @b ) < @c 
+    if ( @a + @b ) <= @c 
       begin
         raise TriangleError
       rescue TriangleError => error
